@@ -2,8 +2,9 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+ 
    sitemap: {
-    hostname: 'https://kuajingdocs.com'
+    hostname: 'https://kuajingdoc.com'
   },
   title: "Temu跨境电商入门手册",
   // 语言
@@ -20,7 +21,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '主页', link: '/' },
-      { text: 'Temu教程', link: '/docs/1/qibu' },
+      { text: 'Temu教程', link: '/art/1/qibu' },
       { text: '联系我', link: '/contact' }
     ],
     sidebar: [
@@ -28,57 +29,57 @@ export default defineConfig({
         text: '第1章 基础认知篇',
         collapsed: false,
         items: [
-          { text: '1.1 消除恐惧：跨境≠外贸高门槛', link: '/docs/1/qibu' },
-          { text: '1.2 启动资金真相：从 0 到出单要花的每一分钱', link: '/docs/1/2' },
-          { text: '1.3 合规比盈利更值得关注:Temu 红线全解析', link: '/docs/1/3' }
+          { text: '1.1 消除恐惧：跨境≠外贸高门槛', link: '/art/1/qibu' },
+          { text: '1.2 启动资金真相：从 0 到出单要花的每一分钱', link: '/art/1/2' },
+          { text: '1.3 合规比盈利更值得关注:Temu 红线全解析', link: '/art/1/3' }
         ]
       },
       {
         text: '第2章 开店实操篇',
         collapsed: true,
         items: [
-          { text: '2.1 商家入驻 - 店铺注册申请', link: '/docs/2/1' },
-          { text: '2.2 确定包邮区域', link: '/docs/2/2' },
-          { text: '2.3 仓库地址管理', link: '/docs/2/3' },
-          { text: '2.4 创建运费模板', link: '/docs/2/4' }
+          { text: '2.1 商家入驻 - 店铺注册申请', link: '/art/2/1' },
+          { text: '2.2 确定包邮区域', link: '/art/2/2' },
+          { text: '2.3 仓库地址管理', link: '/art/2/3' },
+          { text: '2.4 创建运费模板', link: '/art/2/4' }
         ]
       },
       {
         text: '第3章 商品上架篇',
         collapsed: true,
         items: [
-          { text: '3.1 合规中心商品标签实拍', link: '/docs/ch3/3-1' },
-          { text: '3.2 价格申报常见问题', link: '/docs/ch3/3-2' },
-          { text: '3.3 商品图片提示', link: '/docs/ch3/3-3' },
-          { text: '3.4 商品详情违规情况', link: '/docs/ch3/3-4' },
-          { text: '3.5 商品说明上传', link: '/docs/ch3/3-5' },
-          { text: '3.6 商品资质上传', link: '/docs/ch3/3-6' },
-          { text: '3.7 商品库存维护', link: '/docs/ch3/3-7' }
+          { text: '3.1 合规中心商品标签实拍', link: '/art/ch3/3-1' },
+          { text: '3.2 价格申报常见问题', link: '/art/ch3/3-2' },
+          { text: '3.3 商品图片提示', link: '/art/ch3/3-3' },
+          { text: '3.4 商品详情违规情况', link: '/art/ch3/3-4' },
+          { text: '3.5 商品说明上传', link: '/art/ch3/3-5' },
+          { text: '3.6 商品资质上传', link: '/art/ch3/3-6' },
+          { text: '3.7 商品库存维护', link: '/art/ch3/3-7' }
         ]
       },
       {
         text: '第4章 订单发货篇',
         collapsed: true,
         items: [
-          { text: '4.1 在线下单发货', link: '/docs/ch4/4-1' },
-          { text: '4.2 查看订单管理', link: '/docs/ch4/4-2' },
-          { text: '4.3 创建发货仓库', link: '/docs/ch4/4-3' },
-          { text: '4.4 订单管理', link: '/docs/ch4/4-4' }
+          { text: '4.1 在线下单发货', link: '/art/ch4/4-1' },
+          { text: '4.2 查看订单管理', link: '/art/ch4/4-2' },
+          { text: '4.3 创建发货仓库', link: '/art/ch4/4-3' },
+          { text: '4.4 订单管理', link: '/art/ch4/4-4' }
         ]
       },
       {
         text: '第5章 运营技巧篇',
         collapsed: true,
         items: [
-          { text: '5.1 搬运或者采集', link: '/docs/ch5/5-1' },
-          { text: '5.2 POD模式', link: '/docs/ch5/5-2' },
+          { text: '5.1 搬运或者采集', link: '/art/ch5/5-1' },
+          { text: '5.2 POD模式', link: '/art/ch5/5-2' },
         ]
       },
       {
         text: '第6章 货源篇',
         collapsed: true,
         items: [
-          { text: '6.1 帮你解决货源问题', link: '/docs/ch6/6-1' },
+          { text: '6.1 帮你解决货源问题', link: '/art/ch6/6-1' },
         ]
       },
     ],

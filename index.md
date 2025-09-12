@@ -20,7 +20,7 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读
-      link: /docs/1/qibu
+      link: /art/1/qibu
     - theme: alt
       text: 有问题请联系我
       link: /contact
