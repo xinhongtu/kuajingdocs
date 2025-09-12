@@ -2,89 +2,90 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+   sitemap: {
+    hostname: 'https://kuajingdocs.com'
+  },
   title: "Temu跨境电商入门手册",
+  // 语言
+  lang: 'zh-CN',
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }]   // 路径以 public 为根
+    ['link', { rel: 'icon', href: '/favicon.ico' }],  // 路径以 public 为根
+    ['meta', { name: 'keywords', content: 'Temu,跨境电商,0库存,一件代发,实操教程,亚马逊到Temu,跨境货源,合规,跨境物流,POD' }],
+    // ['meta', { name: 'description', content: '0基础玩转 Temu：从注册、选品、货源、发货到回款的全流程实操手册，附自动化脚本与合规红线，让新手也能 7 天出单。' }],
   ],
-  description: "帮助中国卖家从零到一,实现跨境梦想",
   themeConfig: {
+     search: {
+      provider: 'local'
+    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '主页', link: '/' },
-      { text: 'Temu教程', link: '/docs/qibu' },
+      { text: 'Temu教程', link: '/docs/1/qibu' },
       { text: '联系我', link: '/contact' }
     ],
     sidebar: [
-  {
-    text: '第1章 基础认知篇',
-    collapsed: false,
-    items: [
-      { text: '1.1 消除恐惧：跨境≠外贸高门槛', link: '/docs/qibu'},
-      { text: '1.2 0 库存物流：中转仓一步搞定', link: '/docs/ch1/1-2' },
-      { text: '1.3 平台规则速览：红线与灰区', link: '/docs/ch1/1-3' }
-    ]
-  },
-  {
-    text: '第2章 开店准备篇',
-    collapsed: true,
-    items: [
-      { text: '2.1 注册流程：个人/企业店铺选择', link: '/docs/ch2/2-1' },
-      { text: '2.2 资质材料清单：执照·账户·电话卡', link: '/docs/ch2/2-2' },
-      { text: '2.3 店铺信息设置：名字·LOGO·退货地址', link: '/docs/ch2/2-3' }
-    ]
-  },
-  {
-    text: '第3章 选品上架篇',
-    collapsed: true,
-    items: [
-      { text: '3.1 大数据选品：热搜词+插件', link: '/docs/ch3/3-1' },
-      { text: '3.2 货源渠道：1688·拼多多·档口', link: '/docs/ch3/3-2' },
-      { text: '3.3 商品发布：标题·主图·SKU 模板', link: '/docs/ch3/3-3' },
-      { text: '3.4 定价策略：成本·运费·扣点测算', link: '/docs/ch3/3-4' }
-    ]
-  },
-  {
-    text: '第4章 订单履约篇',
-    collapsed: true,
-    items: [
-      { text: '4.1 出单通知：状态与时效要求', link: '/docs/ch4/4-1' },
-      { text: '4.2 打包贴单：标准面单+防损技巧', link: '/docs/ch4/4-2' },
-      { text: '4.3 中转仓寄送：快递选择+月结账号', link: '/docs/ch4/4-3' },
-      { text: '4.4 售后处理：退货·仅退款·二次销售', link: '/docs/ch4/4-4' }
-    ]
-  },
-  {
-    text: '第5章 流量转化篇',
-    collapsed: true,
-    items: [
-      { text: '5.1 搜索排名逻辑：销量·评分·关键词', link: '/docs/ch5/5-1' },
-      { text: '5.2 营销活动：秒杀·优惠券设置', link: '/docs/ch5/5-2' },
-      { text: '5.3 广告投放：OCPX 与自定义计划', link: '/docs/ch5/5-3' },
-      { text: '5.4 数据报表：曝光·点击·转化漏斗', link: '/docs/ch5/5-4' }
-    ]
-  },
-  {
-    text: '第6章 风险合规篇',
-    collapsed: true,
-    items: [
-      { text: '6.1 知识产权：商标·专利·版权避坑', link: '/docs/ch6/6-1' },
-      { text: '6.2 资金合规：私账/公账·税务义务', link: '/docs/ch6/6-2' },
-      { text: '6.3 账户安全：防关联·防钓鱼·2FA', link: '/docs/ch6/6-3' }
-    ]
-  },
-  {
-    text: '第7章 扩展进阶篇',
-    collapsed: true,
-    items: [
-      { text: '7.1 多店铺布局：品牌店·杂货店打法', link: '/docs/ch7/7-1' },
-      { text: '7.2 海外仓入驻：条件·费用·周转率', link: '/docs/ch7/7-2' },
-      { text: '7.3 团队搭建：选品·运营·客服分工', link: '/docs/ch7/7-3' }
-    ]
-  }
-],
+      {
+        text: '第1章 基础认知篇',
+        collapsed: false,
+        items: [
+          { text: '1.1 消除恐惧：跨境≠外贸高门槛', link: '/docs/1/qibu' },
+          { text: '1.2 启动资金真相：从 0 到出单要花的每一分钱', link: '/docs/1/2' },
+          { text: '1.3 合规比盈利更值得关注:Temu 红线全解析', link: '/docs/1/3' }
+        ]
+      },
+      {
+        text: '第2章 开店实操篇',
+        collapsed: true,
+        items: [
+          { text: '2.1 商家入驻 - 店铺注册申请', link: '/docs/2/1' },
+          { text: '2.2 确定包邮区域', link: '/docs/2/2' },
+          { text: '2.3 仓库地址管理', link: '/docs/2/3' },
+          { text: '2.4 创建运费模板', link: '/docs/2/4' }
+        ]
+      },
+      {
+        text: '第3章 商品上架篇',
+        collapsed: true,
+        items: [
+          { text: '3.1 合规中心商品标签实拍', link: '/docs/ch3/3-1' },
+          { text: '3.2 价格申报常见问题', link: '/docs/ch3/3-2' },
+          { text: '3.3 商品图片提示', link: '/docs/ch3/3-3' },
+          { text: '3.4 商品详情违规情况', link: '/docs/ch3/3-4' },
+          { text: '3.5 商品说明上传', link: '/docs/ch3/3-5' },
+          { text: '3.6 商品资质上传', link: '/docs/ch3/3-6' },
+          { text: '3.7 商品库存维护', link: '/docs/ch3/3-7' }
+        ]
+      },
+      {
+        text: '第4章 订单发货篇',
+        collapsed: true,
+        items: [
+          { text: '4.1 在线下单发货', link: '/docs/ch4/4-1' },
+          { text: '4.2 查看订单管理', link: '/docs/ch4/4-2' },
+          { text: '4.3 创建发货仓库', link: '/docs/ch4/4-3' },
+          { text: '4.4 订单管理', link: '/docs/ch4/4-4' }
+        ]
+      },
+      {
+        text: '第5章 运营技巧篇',
+        collapsed: true,
+        items: [
+          { text: '5.1 搬运或者采集', link: '/docs/ch5/5-1' },
+          { text: '5.2 POD模式', link: '/docs/ch5/5-2' },
+        ]
+      },
+      {
+        text: '第6章 货源篇',
+        collapsed: true,
+        items: [
+          { text: '6.1 帮你解决货源问题', link: '/docs/ch6/6-1' },
+        ]
+      },
+    ],
 
     socialLinks: [
-      { icon: 'xiaohongshu', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'xiaohongshu', link: 'https://www.xiaohongshu.com/user/profile/62f2e3fc000000001f0170d5' },
+      { icon: 'tiktok', link: 'https://www.xiaohongshu.com/user/profile/62f2e3fc000000001f0170d5' },
     ]
   }
 })
