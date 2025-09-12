@@ -86,7 +86,7 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'xiaohongshu', link: 'https://www.xiaohongshu.com/user/profile/62f2e3fc000000001f0170d5' },
-      { icon: 'tiktok', link: 'https://www.xiaohongshu.com/user/profile/62f2e3fc000000001f0170d5' },
+      { icon: 'tiktok', link: 'https://www.douyin.com/user/MS4wLjABAAAAKfGr_XkLbdfHrW75ScblAmS06WL6yzVbI-LRo3NYdZM?from_tab_name=main' },
     ]
   }
 })
