@@ -12,7 +12,7 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],  // 路径以 public 为根
     ['meta', { name: 'keywords', content: 'Temu,跨境电商,0库存,一件代发,实操教程,亚马逊到Temu,跨境货源,合规,跨境物流,POD' }],
-    // ['meta', { name: 'description', content: '0基础玩转 Temu：从注册、选品、货源、发货到回款的全流程实操手册，附自动化脚本与合规红线，让新手也能 7 天出单。' }],
+    ['meta', { name: 'baidu-site-verification', content: 'codeva-KB4Tsc1TcO' }]
   ],
   themeConfig: {
      search: {
