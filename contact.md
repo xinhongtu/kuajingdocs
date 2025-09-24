@@ -23,22 +23,30 @@ const count = ref(0)
       />
     </div>
     <div class="content">
-      <h3>跨境话你知</h3>
-      <p>Temu 开店咨询 · 运营指导 · 技术支持</p>
+      <h1>跨境资讯情报站</h1>
+      <div class=fubiaoti>
+      <span>10 年跨境实战经验，亲历国内电商 -> 跨境电商全平台变迁</span>
+      </div>
+      <span>精通供应链、合规、资金通道，擅长用自动化代码替代重复人力</span>
       <ul class="contact">
-        <li>抖音：跨境话你知</li>
+        <!-- <li>抖音：跨境话你知</li> -->
         <li>小红书：跨境资讯情报站</li>
-        <li>微信：EvanZhu1987</li>
+        <li>邮箱: zxm@hidaddy.com.cn</li>
+        <li>手机: 13656617631</li>
+        <li>QQ: 598082463</li>
       </ul>
     </div>
     <div class="qr-box">
-      <img
+      <!-- <img
         class="qr"
         src="/wechat.jpg"
         alt="微信二维码"
         @error="qrError"
       />
-      <span class="qr-txt">扫码加微信</span>
+      <span class="qr-txt">扫码加微信</span> -->
+      近期加我微信好友的朋友实在太多,以至账号被封控！<br>
+      如有问题咨询,请尽量发送电子邮件给我,留下您的电话
+      我会尽快给您回复
     </div>
   </div>
 
@@ -106,7 +114,9 @@ ul,li {
   font-size: 14px;
   color: var(--vp-c-text-2);
 }
-
+span{
+  color: var(--vp-c-text-2);
+}
 .contact {
   list-style: none;
   padding: 0;
@@ -116,5 +126,8 @@ ul,li {
 }
 .contact li + li {
   margin-top: 6px;
+}
+.fubiaoti{
+  margin-top:10px;
 }
 </style>

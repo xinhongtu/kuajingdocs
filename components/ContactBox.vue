@@ -1,13 +1,14 @@
 <template>
     <div class="border">
         <div>
-            <p style="font-size: 20px; font-weight: 800;">抖音账号:跨境话你知</p>
+            <p style="font-size: 20px; font-weight: 800;">作者:朱小明</p>
             <p style="font-size: 20px; font-weight: 800;">小红书账号:跨境资讯情报站</p>
             <p> 10 年跨境实战经验，亲历国内电商 -> 跨境电商全平台变迁</p>
             <p>精通供应链、合规、资金通道，擅长用自动化代码替代重复人力</p>
+            <p>邮箱：zxm@hidaddy.com.cn</p>
         </div>
         <div>
-            <img src="/wechat.jpg" alt="微信图">
+            <img src="/qq.jpg" alt="微信图">
         </div>
     </div>
 </template>

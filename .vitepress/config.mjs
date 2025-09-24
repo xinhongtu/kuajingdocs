@@ -1,7 +1,28 @@
 import { defineConfig } from 'vitepress'
-
+import fs from 'fs'
+import path from 'path'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  //生成url文件供百度api提交使用
+  // async buildEnd(siteConfig) {
+  //   const baseURL = 'https://kuajingdocs.com' // ✅ 替换为你的实际域名
+  //   const urls = []
+
+  //   for (const page of siteConfig.pages) {
+  //     // 跳过非公开页面（如 404）
+  //     if (page.includes('404')) continue
+
+  //     // 将 .md 转为 .html，并拼成完整 URL
+  //     const url = `${baseURL}/${page}`
+  //       .replace(/\.md$/, '.html')
+  //       .replace(/\/index\.html$/, '/') // 首页优化
+  //     urls.push(url)
+  //   }
+
+  //   const outPath = path.join(siteConfig.outDir, 'urls.txt')
+  //   fs.writeFileSync(outPath, urls.join('\n'), 'utf-8')
+  //   console.log(`✅ 已生成 urls.txt，共 ${urls.length} 条链接`)
+  // },
  
    sitemap: {
     hostname: 'https://kuajingdoc.com'
@@ -12,7 +33,15 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],  // 路径以 public 为根
     ['meta', { name: 'keywords', content: 'Temu,跨境电商,0库存,一件代发,实操教程,亚马逊到Temu,跨境货源,合规,跨境物流,POD' }],
-    ['meta', { name: 'baidu-site-verification', content: 'codeva-KB4Tsc1TcO' }]
+    ['meta', { name: 'baidu-site-verification', content: 'codeva-KB4Tsc1TcO' }],
+    ['meta', { name: 'msvalidate.01', content: '3BCF94B10FAD93322860B7BB8B29A595' }],
+    ['script',{},`var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?6bc004e417883adc5c3a678cddcc748a";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();`]
   ],
   themeConfig: {
      search: {
@@ -73,6 +102,7 @@ export default defineConfig({
         items: [
           { text: '5.1 搬运或者采集', link: '/art/ch5/5-1' },
           { text: '5.2 POD模式', link: '/art/ch5/5-2' },
+          { text: '5.3 差异化的思考', link: '/art/ch5/5-3' },
         ]
       },
       {
@@ -85,8 +115,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'xiaohongshu', link: 'https://www.xiaohongshu.com/user/profile/62f2e3fc000000001f0170d5' },
-      { icon: 'tiktok', link: 'https://www.douyin.com/user/MS4wLjABAAAAKfGr_XkLbdfHrW75ScblAmS06WL6yzVbI-LRo3NYdZM?from_tab_name=main' },
+      { icon: 'xiaohongshu', link: 'https://www.xiaohongshu.com/user/profile/62f2e3fc000000001f0170d5' }
     ]
   }
 })
